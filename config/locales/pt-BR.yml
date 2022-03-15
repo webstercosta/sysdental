@@ -1,0 +1,767 @@
+pt-BR:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'A validação falhou: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Não é possível excluir o registro pois existe um %{record} dependente
+          has_many: Não é possível excluir o registro pois existem %{record} dependentes
+    models:
+      "configuracao/notificacao": "Notificação"
+      "configuracao/atualizacao_financeira": "Atualização Financeira"
+      "configuracao/item_da_atualizacao_financeira": "Item da Atualização Financeira"
+    attributes:
+      "atendimento/declaracao_transacao_imobiliaria":
+        imovel_id: Imóvel
+        logradouro_do_imovel: Logradouro
+        numero_do_imovel: Número
+        complemento_do_imovel: Complemento
+        bairro_id: Bairro
+        tipo_de_imovel: Tipo de Imóvel
+        informacoes_do_imovel: Informações/Descrição do Imóvel
+        transmitente_id: Transmitente
+        adquirente_id: Adquirente
+        procurador_adquirente_nome: Nome do Procurador
+        procurador_transmitente_nome: Nome do Procurador
+        procurador_adquirente_documento: Documento do Procurador
+        procurador_transmitente_documento: Documento do Procurador
+        exercicio: Exercício
+        finalidade: Finalidade
+        matricula_do_imovel: Matrícula do Imóvel
+        valor_da_transacao: Valor da Transação
+        minha_casa_minha_vida: Minha Casa, Minha Vida?
+        linha_de_credito: Linha de Crédito
+        orgao_financiador: Orgão Financiador
+        valor_avaliacao_do_financiador: Valor de Avaliação do Financiador
+        valor_financiado: Valor Financiado
+        valor_nao_financiado: Valor Não Financiado
+      "atendimento/amostra":
+        declaracao_transacao_imobiliaria_id: 'DTI'
+        avaliacao_de_imovel_id: Avaliação de Imóvel
+        imovel_id: Inscrição Imobiliária
+        endereco_da_amostra: Endereço/Localização
+        valor_transacao_da_amostra: Valor da Transação
+        area_edificada_da_amostra: Área Edificada
+        area_terreno_da_amostra: Área do Terreno
+        valor_m2_edificada_da_amostra: Valor do M² Edificado
+        valor_m2_terreno_da_amostra: Valor do M² do Terreno
+        observacao_da_amostra: Observação
+        tipo_de_amostra: Tipo de Amostra
+      "atendimento/avaliacao_de_imovel":
+        declaracao_transacao_imobiliaria_id: DTI
+        numero_do_documento: Número do Documento
+        exercicio: Exercício
+        descricao: Descrição
+        forma_de_avaliacao: Forma de Avaliação
+        area_do_terreno: Área do Terreno
+        area_da_edificacao: Área da Edificação
+        valor_m2_do_terreno: Valor M² do Terreno
+        valor_m2_cub: Valor M² do CUB
+        valor_m2_edificado: Valor M² Edificado
+        valor_m2_do_terreno: Valor M² do Terreno
+        numero_de_lotes: Número de Lotes
+        valor_por_lote: Valor por Lote
+        valor_da_avaliacao: Valor da Avaliação (R$)
+        valor_do_terreno: Valor do Terreno
+        valor_da_edificacao: Valor da Edificação
+        valor_dos_lotes: Valor dos Lotes
+        depreciacao_fator_conservacao_id: Fator de Conservação
+        cub_padrao_item_id: CUB - Padrão
+        fator_de_depreciacao: Fator de Depreciação
+        fator_de_custo_indireto: Fator de Custo Indireto
+        valor_das_benfeitorias: Valor das Benfeitorias
+        vida_util_da_edificacao_id: Vida útil da Edificação
+        idade_da_edificacao: Idade da Edificação
+        porcentagem_de_vida_util: "% de Vida Útil"
+        fator_de_comercializacao: Fator de Comercialização
+        situacao: Situação
+        parecer: Parecer
+        numero_de_amostras: Número de Amostras
+        valor_total_das_amostras: Valor Total das Amostras
+        valor_m2_medio_das_amostras: Valor M² médio das Amostras
+        valor_da_receita_bruta: Valor da Receita Bruta
+        area_da_gleba: Área da Gleba
+        area_loteavel: Área Loteável
+        area_de_preservacao: Área de Preservação
+        coeficiente_de_urbanizacao: Coeficiente de Urbanização
+        vlr_m2_dos_lotes_vizinhos: Valor M² dos Lotes Vizinhos
+        area_media_dos_lotes: Área Média dos Lotes
+        valor_despesas_serv_urbanizacao: Valor das Despesas de Serviço/Urbanização
+        valor_despesas_venda_publicidade: Valor das Despesas de Venda/Publicidade
+        valor_taxas_e_emolumentos: Valor das Taxas e Emolumentos
+        valor_lucros: Valor dos Lucros
+        percentual_serv_urbanizacao: "% de Serviço/Urbanização"
+        percentual_venda_publicidade: "% de Venda/Publicidade"
+        percentual_taxas_e_emolumentos: "% de Taxas e Emolumentos"
+        percentual_lucro: "% dos Lucros"
+        valor_base_da_averbacao: Valor Base da Averbação
+        base_de_calculo_para_ITBI: Base de Cálculo para ITBI
+        lanca_averbacao: Lançar Averbação
+        aliquota_averbacao: Alíquota da Averbação
+        valor_da_averbacao: Valor da Averbação
+        observacao: Observação
+        validade: Validade
+        vlr_m2_medio_terreno_das_amostras: Valor M² médio de Terreno das Amostras
+        vlr_m2_medio_edificado_das_amostras: Valor M² médio Edificado das Amostras
+      "cadastro/atividade":
+          descricao: Descrição
+      "cadastro/contribuinte":
+          nome: Nome/Razão Social
+          nome_fantasia: Nome Fantasia
+          situacao: Situação
+          tipo: Tipo
+          documento: Documento
+          rg: RG
+          nit: NIT
+          data_de_nascimento: Data de Nascimento
+          nome_da_mae: Nome da Mãe
+          nome_do_pai: Nome do Pai
+          cep: CEP
+          logradouro: Logradouro
+          numero: Número
+          complemento: Complemento
+          bairro: Bairro
+          cidade_id: Cidade
+          falecido: Falecido?
+          inscricao_estadual: Inscrição Estadual
+          nire: NIRE
+          tipo_de_cnpj: Matriz ou Filial?
+          restricao: Restrição
+      "cadastro/estabelecimento":
+          prefeitura: Prefeitura?
+          orgao_governamental: Orgão Governamental?
+          pagamento_via_siaf: Pagamento feito via SIAF?
+          nota_fiscal: Autorizado Nota Fiscal
+          inicio_nota_fiscal: Data de Início - Nota Fiscal
+          limite_nota_fiscal: Data Limite - Nota Fiscal
+          usar_endereco_do_contribuinte: Usar o endereço do Contribuinte
+          numero: Número
+          natureza_juridica: Natureza Jurídica
+          nivel_de_instrucao: Nível de Instrução
+          area_do_estabelecimento: Área do Estabelecimento
+          tipo_de_declaracao: Tipo de Declaração
+          situacao: Situação
+          especialidade_do_autonomo: Especialidade
+      "cadastro/imovel":
+        contribuinte_id: Contribuinte
+        quadra_id: Quadra
+        lote: Lote
+        unidade: Unidade
+        inscricao_anterior: Inscrição Anterior
+        natureza: Natureza
+        situacao: Situação
+        boleto_grafica: Boleto Gráfica?
+        correspondencia_devolvida: Correspondência Devolvida?
+        cep: CEP
+        logradouro_id: Logradouro
+        numero: Número
+        complemento: Complemento
+        bairro_id: Bairro
+        condominio: Condomínio
+        bloco: Bloco
+        numero_no_condominio: Número
+        loteamento_lote_id: Loteamento
+        frentes: Frentes
+        pavimentos: Pavimentos
+        unidades: Unidades
+        quantidade_de_imoveis: Qtd. de Imóveis
+        testada_principal: Testada Principal
+        area_do_terreno: Área do Terreno
+        profundidade: Profundidade
+        area_da_unidade_edificada: Área da Unidade Edificada
+        area_do_empreendimento: Área do Empreendimento
+        total_area_comum_nao_edificada: Total da Área Comum não Edificada
+        total_area_comum_edificada: Total da Área Comum Edificada
+        area_total_edificada: Área Total Edificada
+        fracao_ideal_do_terreno: Fração Ideal do Terreno
+        data_da_construcao: Data da Construção
+        data_do_tombamento: Data do Tombamento
+        arrematado: Arrematado?
+        cozinhas: Cozinhas
+        quartos: Quartos
+        banheiros: Banheiros
+        salas: Salas
+        pontos_de_agua: Pontos de Água
+        companhia_de_agua: Companhia de Água
+        numero_do_medidor: Número do Medidor
+        numero_de_serie_do_medidor: Série do Medidor
+        inscricao_incorporada: Inscrição Incorporada
+        data_incorporacao: Data de Incorporação
+        inscricao_desmembrada: Inscrição Desmembrada
+        data_desmembramento: Data do Desmebramento
+        distrito_id: Distrito
+        setor_id: Setor
+        loteamento_id: Loteamento
+        loteamento_quadra_id: Quadra do Loteamento
+        correspondencia: Correspondência
+        co_proprietario_id: Co-Proprietário
+        ano_referencia: Ano Referência
+        ano_primeiro_iptu: Ano Primeiro IPTU
+      "cadastro/imovel_do_estabelecimento":
+        inicio_da_locacao: Início da Locação
+        fim_da_locacao: "Fim da Locação"
+        imovel_id: Imóvel
+      "cadastro/co_proprietario":
+        solidario: Solidário
+      "cadastro/condutor":
+        numero_cnh: Número CNH
+        contribuinte_id: Contribuite
+        veiculo_id: Veículo
+      "cadastro/distrito":
+        numero: Número
+      "cadastro/loteamento":
+        nome: Nome
+        logradouro_id: Logradouro
+        bairro_id: Bairro
+        contribuinte_id: Contribuinte
+        numero_do_processo: Número do Processo
+        data_de_aprovacao: Data de Aprovação
+        responsavel: Responsável
+        crea_do_responsavel: CREA do Responsável
+        crea: CREA
+        valor_m2_do_terreno: Valor M² do Terreno
+      "cadastro/logradouro":
+        nome_oficial: Nome Oficial
+        nome_anterior: Nome Anterior
+        nome_popular: Nome Popular
+      "cadastro/setor":
+        numero: Número
+      "cadastro/codigo_de_tributacao":
+        aliquota_auxiliar: Alíquota Auxiliar
+        aliquota_da_deducao: Alíquota da Dedução
+        exercicio_em_uso: Exercício em Uso
+        tipo_de_atividade: Tipo de Atividade
+        servico: Serviço
+      "cadastro/grupo":
+        descricao: Descrição
+        tipo: Tipo
+      "cadastro/atributo":
+        descricao: Descrição
+        tipo: Tipo
+        grupo_id: Grupo
+      "cadastro/item_do_atributo":
+        descricao: Descrição
+        imune: Imune
+        isento: Isento
+        atributo_id: Atributo
+      "cadastro/cnae":
+        descricao: Descrição
+        fator_r: Fator R
+      "cadastro/cnae_do_estabelecimento":
+        atividade_principal: Atividade
+        simples_nacional: Simples Nacional
+        exibir_na_os: Exibir na OS
+      "cadastro/contador":
+        tipo_de_autorizacao: Tipo de Autorização
+        tipo_de_documento: Tipo de Documento
+        numero: Número
+      "cadastro/observacao":
+        descricao: Descrição
+      "cadastro/veiculo":
+        estabelecimento_id: Estabelecimento
+        uso: Uso
+        placa: Placa
+        cor: Cor
+        renavam: Renavam
+        chassi: Chassi
+        ano_de_fabricacao: Ano de Fabricação
+        combustivel: Combustível
+        potencia_do_motor: Potência do Motor
+        sistema_de_transporte: Sistema de Transporte
+        peso: Peso
+        capacidade_de_carga: Capacidade de Carga
+        numero_da_vaga: Número da Vaga
+        relacao_contratual: Relação Contratual
+        situacao: Situação
+      "configuracao/servico":
+        codigo_auxiliar: Código Auxiliar
+        descricao: Descrição
+        descricao_detalhada: Descrição detalhada
+        aliquota_da_deducao: Alíquota da Dedução
+        limite_da_deducao: Limite da Dedução
+        local_da_tributacao: Local da Tributação
+        permitir_retencao: Permitir Retenção
+        permitir_deducao: Permitir Dedução
+        servico_de_obra: Serviço de Obra
+        incide_iss: Incide ISS
+        permitir_usar_na_nfa: Permitir o uso na NFA
+        informar_mao_de_obra: Informar a mão de obra
+      "configuracao/autonomo":
+        exercicio: Exercício
+        nivel: Nível
+        valor: Valor
+      "configuracao/especialidade_do_autonomo":
+        descricao: Descrição
+      "configuracao/instituicao":
+        numero: Número
+        razao_social: Razão Social
+        brasao: Brasão
+      "configuracao/orgao":
+        numero: Número
+        brasao: Brasão
+      "usuario":
+        matricula: Matrícula
+        orgao: Órgão
+        password: Senha
+        password_confirmation: Confirme a Senha
+      "configuracao/fator_corretivo_do_terreno":
+        descricao: Descrição
+      "configuracao/convenio":
+        padrao: Padrão
+        agente_arrecadador_id: "Agente Arrecadador"
+        numero: Número
+        cedente: Cedente
+      "configuracao/indice_de_atualizacao":
+        descricao: Descrição
+      "configuracao/exercicio_do_indice":
+        exercicio: Exercício
+      "configuracao/unidade_do_orgao":
+        nome: Nome
+        orgao_id: Órgão
+        instancia: Instância
+        situacao: Situação
+      "seguranca/autorizacao":
+        observacao: Observação
+      "protocolo/finalidade":
+        descricao: Descrição
+        prazo_padrao: Prazo padrão
+        despacho_padrao: Despacho padrão
+        unidade_do_orgao: "Unidade do orgão"
+        orgao: "Orgão"
+      "protocolo/documento_necessario":
+        descricao: Descrição
+        obrigatorio: Obrigatório
+      "configuracao/receita":
+        sigla: Sigla
+        descricao: Descrição
+        orgao: Órgão
+        modelo: Modelo
+        tipo: Tipo
+        natureza: Natureza
+        inscrever_na_divida_em_massa: Inscrever na Dívida Ativa
+        cobrar_juros_no_exercicio: Cobrar Juros no Exercício
+        usar_valor_total_na_rubrica_de_juros_e_multa: Usar Valor Total na Rubrica de Juros e Multa
+        tipo_de_codigo_de_barras: Tipo de Código de Barras
+        tipo_de_febraban: Tipo de FEBRABAN
+        codigo_febraban: Código FEBRABAN
+        agente_arrecadador: Agente Arrecadador
+        agencia: Agência
+        cedente: Cedente
+        digito_verificador: DV
+        convenio: Convênio
+        agente_arrecadador_do_pix: Agente Arrecadador do PIX
+        chave_pix: Chave PIX
+        somente_boleto: Gerar somente boleto?
+      "configuracao/receita_diversa":
+        descricao: Descrição
+        exercicio: Exercício
+        geracao_externa: Geração Externa
+      "configuracao/item_da_receita_diversa":
+        descricao: Descrição
+        forma_de_calculo: Forma de Cálculo
+      "configuracao/iptu":
+        exercicio: Exercício
+        formula_de_calculo: Fórmula de Cálculo
+        parametro_m2_terreno: Parâmetro valor m² Terreno
+        parametro_m2_edificado: Parâmetro valor m² Edificado
+        fator_atributo_id: Atributo para Fatores Corretivos
+        fator_do_terreno_item_do_atributo_id: Item do Atributo para Fatores Corretivos Terreno
+        delimitacao_atributo_id: Atributo Delimitação
+        delimitacao_item1_do_atributo_id: Item do Atributo Delimitação (opção 1)
+        delimitacao_item2_do_atributo_id: Item do Atributo Delimitação (opção 2)
+        aliquota_atributo_id: Atributo para Alíquotas
+        valor_m2_edificacao_atributo_id: Atributo para valores m² Edificação
+        aliquota_terreno_com_delimitacao: Alíquota para Terreno com Delimitação
+        aliquota_terreno_sem_infraestrutura: Alíquota para Terreno sem Infraestrutura
+        aliquota_terreno_com_delimitacao_infraestrutura: Alíquota para Terreno com Delimitação e Infraestrutura
+        aliquota_terreno_com_edificacao: Alíquota para Terreno com Edificação
+        calculo_com_fracao_ideal_terreno: Cálculo de Valor Venal do Terreno com Fração Ideal
+        aliquota_por_faixa_valor_venal: Alíquota IPTU por Faixas de Valores Venais
+        aliquota_por_faixa_area: Alíquota IPTU por Faixas de Área
+        calculo_com_proporcao_edificacao_terreno: Alíquota de Terreno para Imóveis com Área Edificada inferior a 20% da Área do Terreno
+        reducao_aliquota_terreno_com_delimitacao: Redução de Alíquota para Terreno com Atributo Delimitação
+        aliquota_terreno_item_atributo_id: Item do Atributo para Alíquota Terreno
+        correcao_de_valor: Correção de Valor
+      "configuracao/depreciacao":
+        descricao: Descrição
+      "configuracao/depreciacao_fator_conservacao":
+        depreciacao_porcentagem_id: Vida em % do Imóvel
+        classificacao: Classificação
+      "configuracao/cub_projeto":
+        descricao: Descrição
+        especificacao: Especificação
+      "configuracao/cub_padrao":
+        ano: Ano
+        mes: Mês
+      "configuracao/cub_padrao_item":
+        padrao_de_acabamento: Padrão de Acabamento
+        valor: Valor do M²
+      "configuracao/fator_da_vistoria":
+        descricao: Descrição
+      "configuracao/item_da_vistoria":
+        descricao: Descrição
+      "configuracao/vida_util_da_edificacao":
+        tipo_de_edificacao: Tipo de Edificação
+        estimativa_em_anos: Estimativa de Vida em Anos
+      "configuracao/minha_casa_minha_vida":
+        descricao: Descrição
+        situacao: Situação
+      "configuracao/faixa_minha_casa_minha_vida":
+        renda: Renda
+        aliquota: Alíquota
+      "configuracao/atualizacao_financeira":
+        descricao: Descrição
+      "configuracao/item_da_atualizacao_financeira":
+        exercicio: Exercício
+        competencia_inicial: Competência Inicial
+        competencia_final: Competência Final
+        aliquota_da_multa: Alíquota da Multa
+        indice_de_juros_id: Índice de Juros
+        aliquota_de_juros: Alíquota de Juros
+        tipo_de_correcao:  Tipo de Correção
+        indice_de_correcao_id: Índice de Correção
+        aliquota_de_correcao: Aliquota de Correção
+        cobrar_fracao_multa: Cobrar Fração (Multa)
+        cobrar_fracao_juros: Cobrar Fração (Juros)
+      "configuracao/modelo_de_documento":
+        exercicio: Exercício
+        titulo: Título
+        orgao_id: Órgão
+        padrao_de_numeracao: Padrão de Numeração
+        tipo_de_autorizacao: Tipo de Autorização
+        niveis_de_autorizacao: Níveis de Autorização
+        tipo_de_validacao_de_pagamento: Tipo de Validação de Pagamento
+        tipo_de_validacao_de_lancamento: Tipo de Validação de Lançamento
+        tipo_de_sequencia: Tipo de Sequência
+        validade_padrao: Validade Padrão
+        prazo_para_nova_emissao: Prazo para Nova Emissão
+        texto_modelo: Texto Modelo
+        tamanho_do_qrcode: Tamanho do QRCODE
+      "atendimento/lancamento_de_receita":
+        descricao: Descrição
+        receita_diversa_id: Receita Diversa
+        quantidade_de_parcelas: Qtd. de Parcelas
+        exercicio: Exercício
+      "atendimento/item_do_lancamento_de_receita":
+        item_da_receita_diversa_id: Item
+        quantidade: Quantidade/Valor
+        valor: Valor Calculado
+      "divida_ativa/livro":
+        numero: Número
+        exercicio: Exercício
+      "mercado/tipo_de_produto":
+        descricao: Descrição
+      "mercado/equipamento_publico":
+        descricao: Descrição
+        categoria: Categoria
+        tipo: Tipo
+        logradouro: Logradouro
+        cep: CEP
+        responsavel: Responsável
+        area_do_terreno: Área do Terreno
+        area_coberta: Área Coberta
+        latitude: Latitude
+        longitude: Longitude
+        quantidade_de_banheiros: Quantidade de Banheiros
+        situacao: Situação
+      "mercado/item_do_equipamento":
+        numero: Número
+        localizacao: Localização
+        tipo: Tipo
+        fileira: Fileira
+        equipamento_publico_id: Equipamento Público
+        area: Área
+        situacao: Situação
+        Zona: Zona
+        observacao: Observação
+        tipo_de_produto_id: Tipo de Produto
+      "mercado/contrato":
+        data_do_contrato: Data do Contrato
+        data_de_emissao: Data da Emissão
+        validade: Validade
+        contribuinte_id: Contribuinte
+        valor_mensal: Valor Mensal
+        situacao: Situação
+        usuario_cancelamento_id: Usuário do Cancelamento
+        equipamento_publico_id: Equipamento Público
+      "mercado/item_do_contrato":
+        contrato_id: Contrato
+        item_do_equipamento_id: Item do Equipamento
+        valor: Valor
+        situacao: Situação
+      "mercado/feira_publica":
+        descricao: Descrição
+        logradouro: Logradouro
+        situacao: Situação
+        bairro: Bairro
+      "mercado/banca":
+        numero: Número
+        area_ocupada: Área Ocupada
+        fileira: Fileira
+        produto_id: Produto
+        feira_publica_id: Feira Pública
+        contribuinte_id: Contribuinte
+        tipo_de_equipamento: Tipo de Equipamento
+        situacao: Situação
+        data_da_concessao: Data da Concessão
+        origem_do_vendedor: Origem do Vendedor
+        valor: Valor
+        periodicidade: Periodicidade
+      "mercado/lancamento_do_contrato":
+        contrato_id: Contrato
+        exercicio: Exercício
+        receita_id: Receita
+        vencimento: Vencimento
+        valor: Valor
+        quantidade_de_meses: Quantidade de Meses
+        quantidade_de_parcelas: Quantidade de Parcelas
+        forma_de_lancamento: Forma de Lançamento
+        percentual_de_reajuste: Percentual de Reajuste
+        situacao: Situação
+        usuario_id: Usuário
+        valor_total: Valor Total
+      "mercado/lancamento_do_evento":
+        descricao: Descrição
+        data_inicial: Data Inicial
+        data_final: Data Final
+        vencimento: Vencimento
+        feira_publica_id: Feira Pública
+        situacao: Situação
+      "mercao/bancas_do_lancamento":
+        exercicio: Exercício
+        vencimento: Vencimento
+        valor_total: Valor Total
+        usuario_id: Usuário
+        receita_id: Receita
+        banca_id: Banca
+        lancamento_do_evento_id: Lançamento do Evento
+        percentual_de_reajuste: Percentual de Reajuste
+  activemodel:
+    attributes:
+      "processo/imovel/incorporar":
+        primeiro_imovel_testada_principal: Testada Principal
+        primeiro_imovel_area_do_terreno: Área do Terreno
+        primeiro_imovel_area_da_unidade_edificada: Área da Unidade Edificada
+        primeiro_imovel_area_total_edificada: Área Total Edificada
+        cadastro_imovel_testada_principal: Testada Principal
+        cadastro_imovel_area_do_terreno: Área do Terreno
+        cadastro_imovel_area_da_unidade_edificada: Área da Unidade Edificada
+        cadastro_imovel_area_total_edificada: Área Total Edificada
+        testada_principal_a_incorporar: "Testada Principal à Incorporar"
+        area_do_terreno_a_incorporar: "Área do Terreno à Incorporar"
+        area_da_unidade_edificada_a_incorporar: "Área da Unidade Edificada à Incorporar"
+        area_total_edificada_a_incorporar: "Área Total à Incorporar"
+  date:
+    abbr_day_names:
+    - Dom
+    - Seg
+    - Ter
+    - Qua
+    - Qui
+    - Sex
+    - Sáb
+    abbr_month_names:
+    -
+    - Jan
+    - Fev
+    - Mar
+    - Abr
+    - Mai
+    - Jun
+    - Jul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dez
+    day_names:
+    - Domingo
+    - Segunda-feira
+    - Terça-feira
+    - Quarta-feira
+    - Quinta-feira
+    - Sexta-feira
+    - Sábado
+    formats:
+      default: "%d/%m/%Y"
+      long: "%d de %B de %Y"
+      short: "%d de %B"
+    month_names:
+    -
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: aproximadamente 1 hora
+        other: aproximadamente %{count} horas
+      about_x_months:
+        one: aproximadamente 1 mês
+        other: aproximadamente %{count} meses
+      about_x_years:
+        one: aproximadamente 1 ano
+        other: aproximadamente %{count} anos
+      almost_x_years:
+        one: quase 1 ano
+        other: quase %{count} anos
+      half_a_minute: meio minuto
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: menos de %{count} minutos
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      over_x_years:
+        one: mais de 1 ano
+        other: mais de %{count} anos
+      x_days:
+        one: 1 dia
+        other: "%{count} dias"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minutos"
+      x_months:
+        one: 1 mês
+        other: "%{count} meses"
+      x_years:
+        one: 1 ano
+        other: "%{count} anos"
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+    prompts:
+      day: Dia
+      hour: Hora
+      minute: Minuto
+      month: Mês
+      second: Segundo
+      year: Ano
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: deve ser aceito
+      blank: não pode ficar em branco
+      present: deve ficar em branco
+      confirmation: não é igual a %{attribute}
+      empty: não pode ficar vazio
+      equal_to: deve ser igual a %{count}
+      even: deve ser par
+      exclusion: não está disponível
+      greater_than: deve ser maior que %{count}
+      greater_than_or_equal_to: deve ser maior ou igual a %{count}
+      inclusion: não está incluído na lista
+      invalid: não é válido
+      less_than: deve ser menor que %{count}
+      less_than_or_equal_to: deve ser menor ou igual a %{count}
+      model_invalid: 'A validação falhou: %{errors}'
+      not_a_number: não é um número
+      not_an_integer: não é um número inteiro
+      odd: deve ser ímpar
+      required: é obrigatório(a)
+      taken: já está em uso
+      too_long:
+        one: 'é muito longo (máximo: 1 caracter)'
+        other: 'é muito longo (máximo: %{count} caracteres)'
+      too_short:
+        one: 'é muito curto (mínimo: 1 caracter)'
+        other: 'é muito curto (mínimo: %{count} caracteres)'
+      wrong_length:
+        one: não possui o tamanho esperado (1 caracter)
+        other: não possui o tamanho esperado (%{count} caracteres)
+      other_than: deve ser diferente de %{count}
+    template:
+      body: 'Por favor, verifique o(s) seguinte(s) campo(s):'
+      header:
+        one: 'Não foi possível gravar %{model}: 1 erro'
+        other: 'Não foi possível gravar %{model}: %{count} erros'
+  helpers:
+    select:
+      prompt: Por favor selecione
+    submit:
+      create: Cadastrar %{model}
+      submit: Salvar %{model}
+      update: Atualizar %{model}
+  number:
+    currency:
+      format:
+        delimiter: "."
+        format: "%u %n"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: R$
+    format:
+      delimiter: "."
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            one: bilhão
+            other: bilhões
+          million:
+            one: milhão
+            other: milhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
+          thousand: mil
+          trillion:
+            one: trilhão
+            other: trilhões
+          unit: ''
+      format:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+          pb: PB
+          eb: EB
+    percentage:
+      format:
+        delimiter: "."
+        format: "%n%"
+    precision:
+      format:
+        delimiter: "."
+  support:
+    array:
+      last_word_connector: " e "
+      two_words_connector: " e "
+      words_connector: ", "
+  time:
+    am: ''
+    formats:
+      default: "%a, %d de %B de %Y, %H:%M:%S %z"
+      long: "%d de %B de %Y, %H:%M"
+      short: "%d de %B, %H:%M"
+    pm: ''
