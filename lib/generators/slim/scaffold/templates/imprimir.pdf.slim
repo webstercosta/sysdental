@@ -1,0 +1,4 @@
+h3 CADASTRO DE <%= class_name.demodulize.underscore.upcase %>
+
+<% attributes.reject(&:password_digest?).each do |attribute| %>p <%= attribute.human_name.try(:upcase) %>: #{@<%= singular_table_name %>.<%= attribute.name %>}
+<% end %>

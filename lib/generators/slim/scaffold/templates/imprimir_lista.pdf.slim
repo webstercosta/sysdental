@@ -1,0 +1,14 @@
+- if @<%= plural_table_name %>.empty?
+  h6 Nenhum registro encontrado.
+- else
+  h3 LISTA DE <%= plural_table_name.try(:upcase) %>
+  table border="1" style="width: 100%"
+    thead
+      tr
+        <% attributes.reject(&:password_digest?).each do |attribute| %>th <%= attribute.human_name.try(:upcase) %>
+        <% end %>
+    tbody
+      - @<%= plural_table_name %>.each do |<%= class_name.demodulize.underscore %>|
+        tr
+          <% attributes.reject(&:password_digest?).each do |attribute| %>td = <%= class_name.demodulize.underscore %>.<%= attribute.name %>
+          <% end %>

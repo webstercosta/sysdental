@@ -1,0 +1,12 @@
+= simple_form_for @<%= singular_table_name %> do |f|
+  .form-inputs
+    .row
+      .col-md-12
+    <%- attributes.each do |attribute| -%>
+        = f.<%= attribute.reference? ? :association : :input %> :<%= attribute.name %>
+    <%- end -%>
+
+  .actions
+    = f.button :submit, class: "btn btn-primary btn-sm shadow-1"
+    - if autorizado? "index"
+      = link_to "Cancelar", <%= index_helper %>_path, class: "btn btn-dark btn-sm shadow-1"

@@ -1,0 +1,32 @@
+= render partial: "layouts/titulo_pagina", locals: {titulo: "<%= class_name.deconstantize %>", links: { "<%= class_name.deconstantize %>": home_<%= class_name.deconstantize.try(:downcase) %>_path, "<%= class_name.demodulize.underscore.pluralize.capitalize %>": <%= index_helper %>_path, "_ESCOLHER": nil}}
+
+.actions
+  .row
+    .col-md-12
+      div.float-right
+        - if autorizado? "edit"
+          = link_to edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: "btn btn-primary btn-sm shadow-1" do
+            i.feather.icon-edit
+            | Editar
+
+        - if autorizado? "imprimir"
+          = link_to imprimir_<%= singular_table_name %>_path(@<%= singular_table_name %>, format: :pdf), class: "btn btn-primary btn-sm shadow-1", target: "_blank" do
+            i.feather.icon-printer
+            | Imprimir
+
+        - if autorizado? "index"
+          = link_to <%= index_helper %>_path, class: "btn btn-dark btn-sm shadow-1" do
+            i.feather.icon-corner-up-left
+            | Voltar
+
+.card
+  .card-header
+    h5 <%= class_name.demodulize.underscore.capitalize %>
+  .card-body
+    .row
+      .col-md-12
+      <% attributes.reject(&:password_digest?).each do |attribute| %>
+        .form-group
+          label <%= attribute.human_name.try(:upcase) %>
+          input.form-control readonly="readonly" value="#{@<%= singular_table_name %>.<%= attribute.name %>}"
+      <% end %>

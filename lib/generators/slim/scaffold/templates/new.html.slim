@@ -1,0 +1,16 @@
+= render partial: "layouts/titulo_pagina", locals: {titulo: "<%= class_name.deconstantize %>", links: { "<%= class_name.deconstantize %>": home_<%= class_name.deconstantize.try(:downcase) %>_path, "<%= class_name.demodulize.underscore.pluralize.capitalize %>": <%= index_helper %>_path, "Cadastrar <%= class_name.demodulize.underscore.capitalize %>": nil}}
+
+.actions
+  .row
+    .col-md-12
+      div.float-right
+        - if autorizado? "index"
+          = link_to <%= index_helper %>_path, class: "btn btn-dark btn-sm shadow-1" do
+            i.feather.icon-corner-up-left
+            | Voltar
+
+.card
+  .card-header
+    h5 Cadastrar <%= class_name.demodulize.underscore.capitalize %>
+  .card-body
+    == render 'form'
