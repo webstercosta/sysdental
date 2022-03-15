@@ -1,0 +1,235 @@
+$linhas-da-tabela: 0.11em solid black;
+$linha-divisoria: 0.1em solid #808080;
+
+body {
+  font-family: 'Arial';
+  font-size: 10px;
+}
+
+div.alwaysbreak {
+  page-break-before: always;
+}
+
+div.nobreak:before {
+  clear: both;
+}
+
+div.nobreak {
+  page-break-inside: avoid;
+}
+
+.page-break {
+  display: block;
+  clear: both;
+  page-break-after: always;
+}
+
+.avoidbreak {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+tr {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+thead, tfoot {
+  display: table-row-group !important;
+}
+
+table {
+  border-collapse: collapse;
+  border: $linhas-da-tabela;
+}
+
+td, th {
+  border-right: $linhas-da-tabela;
+}
+
+thead tr th {
+  border-bottom: $linhas-da-tabela;
+  border-top: $linhas-da-tabela;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+tbody tr td {
+  border-bottom: $linha-divisoria;
+}
+
+tfoot tr td {
+  border: none !important;
+  padding: 0px;
+}
+
+table.sem-borda, .sem-borda td, .sem-borda th {
+  border: none !important;
+}
+
+tr.apaga-linha td {
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.ultima-linha {
+  border-top: $linhas-da-tabela;
+	font-weight: bold;
+}
+
+.espaco_td {
+	padding: 0.4em;
+}
+
+.logo {
+  float: left;
+}
+
+.tabulacao-0 {
+	padding-left: 2px;
+}
+
+.tabulacao_1 {
+	padding-left: 10px;
+}
+
+.tabulacao_2 {
+	padding-left: 20px;
+}
+
+.cria-linha-abaixo {
+	border-bottom: 0.1em solid black !important;
+}
+
+.negrito {
+	font-weight: bold;
+}
+
+.cabecalho h2 {
+  margin: 0px;
+}
+
+.cabecalho h3 {
+  margin: 2px;
+}
+
+.cabecalho h4 {
+  margin: 2px;
+}
+
+.filtro_utilizado {
+  float: left;
+  padding-right: 8px;
+}
+
+.linha-destaque {
+  border-top: $linhas-da-tabela;
+  border-bottom: $linhas-da-tabela;
+}
+
+.texto {
+  font-size: 9pt;
+  line-height: 12pt;
+}
+
+.centralizar {
+  text-align: center;
+}
+
+.justificar {
+  text-align: justify;
+}
+
+.texto_tab {
+  margin-right: 30px;
+}
+
+.texto_tab2 {
+  margin-right: 60px;
+}
+
+.texto_tab3 {
+  margin-right: 90px;
+}
+
+.texto_tab4 {
+  margin-right: 120px;
+}
+
+.texto-vertical {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.indentar-texto {
+	text-indent: 50px;
+}
+
+.titulo {
+  border-bottom: 1px solid #000;
+  margin-bottom: 25px;
+}
+
+.br {
+  margin-bottom: 20px !important;
+}
+
+.brbr {
+  margin-bottom: 40px !important;
+}
+
+.boleto_titulo {
+  font-size: 85%;
+  padding-bottom: 2px;
+}
+
+.boleto_valor {
+  font-size: 110%;
+  padding-bottom: 2px;
+}
+
+.boleto_align_right {
+  text-align: right;
+}
+
+
+#documento {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+#documento table {
+  font-size: 13px;
+}
+
+.assinatura-coluna {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.assinatura-linha::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.documento-cancelado {
+  text-align: center;
+  background-color: #ffc2c2;
+  width: 100%;
+  padding: 3px 0px;
+}
+
+.marca_dagua_documento {
+  background-image: asset-data-url("cancelado.png");
+  background-repeat: no-repeat;
+}

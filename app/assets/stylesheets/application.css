@@ -10,6 +10,17 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+ *= require style
+ *= require fontawesome/css/fontawesome-all.min.css
+ *= require animation/css/animate.min
+ *= require notification/css/notification.min
+ *= require bootstrap-datetimepicker/css/bootstrap-datepicker3.min
+ *= require data-tables/css/datatables.min
+ *= require select2/css/select2.min
+ *= require pure-css-loader/dist/css-loader
+ *= require pure-css-loader/dist/loader-double
+ *= require lightbox2-master/css/lightbox.min.css
+ *= require custom
+ *= require meus_icones
  *= require_self
  */
